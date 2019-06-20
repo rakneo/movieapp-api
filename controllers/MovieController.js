@@ -10,7 +10,7 @@ module.exports = {
                 })
                 .then(err =>{
                     reject(err)
-                })
+                })  
             })
         },
     getNowPlaying:()=>{
