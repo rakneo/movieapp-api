@@ -1,5 +1,7 @@
 // Full Documentation - https://www.turbo360.co/docs
 const vertex = require('vertex360')({site_id: process.env.TURBO_APP_ID})
+var debug = require('debug')('exp-test:server');
+var http = require('http');
 const cors = require('cors')
 
 // const app = vertex.express() // initialize app
@@ -26,7 +28,7 @@ const config = {
 	}
 }
 
-const app = vertex.app(config) // initialize app with config options
+const app = vertex.express(config) // initialize app with config options
 
 app.use(cors())
 
@@ -38,5 +40,7 @@ const api = require('./routes/api')
 app.use('/', index)
 app.use('/api', api) // sample API Routes
 
+// var port = normalizePort(process.env.PORT || '3000');
+app.set('port', 3000);
 
 module.exports = app
