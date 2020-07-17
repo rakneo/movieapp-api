@@ -27,7 +27,7 @@
     "finalhandler": "1.1.1",
     "fresh": "0.5.2",
     "loadtest": "^3.0.7",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "merge-descriptors": "1.0.1",
     "methods": "^1.1.2",
     "mongoose": "^5.6.0",
