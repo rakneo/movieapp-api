@@ -51,7 +51,7 @@
     "type-is": "^1.6.16",
     "utils-merge": "1.0.1",
     "vary": "^1.1.2",
-    "vertex360": "latest"
+    "vertex360": "0.30.15"
   },
   "devDependencies": {
     "express": "latest",
